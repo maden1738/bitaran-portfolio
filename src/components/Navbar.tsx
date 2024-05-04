@@ -1,10 +1,5 @@
-import { Link, NavLink } from "react-router-dom";
-import {
-  FaEnvelope,
-  FaGraduationCap,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { iconsData } from "../icons";
 
 export default function Navbar() {
   return (
@@ -41,43 +36,21 @@ export default function Navbar() {
               Teachings
             </NavLink>
           </li>
-          <li className="hover-underline-animation">
-            <NavLink
-              to="/contact"
-              className={({ isActive }) => {
-                return isActive ? "hover: text-accent" : "";
-              }}
-            >
-              Contact me
-            </NavLink>
-          </li>
         </ul>
       </nav>
-      <div className="absolute bottom-10 flex w-full justify-center gap-1 text-2xl text-black lg:gap-2 xl:gap-3 2xl:gap-5">
-        <Link to="/contact">
-          <FaEnvelope className="hover:text-accent" />
-        </Link>
-        <a
-          href="https://www.linkedin.com/in/bitaran-maden-23333795/ "
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <FaLinkedin className="hover:text-accent" />
-        </a>
-        <a
-          href="https://scholar.google.com/citations?user=LIQwuRoAAAAJ"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <FaGraduationCap className="hover:text-accent" />
-        </a>
-        <a
-          href="https://github.com/Bitaran"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <FaGithub className="hover:text-accent" />
-        </a>
+      <div className="absolute flex w-full justify-center gap-1 text-3xl text-black lg:bottom-3 lg:gap-2 xl:bottom-10 xl:gap-3 2xl:gap-5">
+        {iconsData.map((icon, idx) => (
+          <a
+            key={idx}
+            href={icon.href}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {
+              <icon.icon className="transition-all duration-75 ease-in hover:-translate-y-1 hover:text-accent " />
+            }
+          </a>
+        ))}
       </div>
     </div>
   );

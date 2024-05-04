@@ -5,13 +5,17 @@ export default function Home() {
   return (
     <>
       <div className="relative  ml-[15vw] grid h-screen grid-cols-2 gap-6 px-[5%]  text-text">
-        <a
-          href={resume}
-          target="_blank"
-          className="font-montserrat absolute bottom-10 right-[10%] text-text2 underline underline-offset-4 hover:text-accent"
-        >
-          My Resume
-        </a>
+        <div className="font-montserrat absolute right-[10%] flex gap-5  text-sm text-text2 lg:bottom-3 xl:bottom-10">
+          <p>bitaran@gmail.com</p>
+          <a
+            href={resume}
+            target="_blank"
+            className=" underline underline-offset-2 hover:text-accent"
+          >
+            My Resume
+          </a>
+        </div>
+
         <div className="font-barlowCondensed my-auto flex flex-col items-center justify-self-center">
           <img
             src={avatar}
@@ -19,9 +23,9 @@ export default function Home() {
             className="aspect-square  rounded-full object-cover lg:h-[250px]"
           />
           <h1 className="  mt-4 text-4xl font-medium  ">Bitaran Jang Maden</h1>
-          <h2 className="font-montserrat mt-2 text-center text-lg font-light text-text2">
+          <p className="font-montserrat mt-2 text-center text-lg  text-text2">
             Professor
-          </h2>
+          </p>
           <a
             href="https://www.uh.edu/"
             target="_blank"
@@ -37,7 +41,7 @@ export default function Home() {
             <h3 className="font-barlowCondensed text-3xl font-medium text-text">
               Biography
             </h3>
-            <p className="font-montserrat mt-3 max-w-[50ch]  text-text2">
+            <p className="font-montserrat mt-2 max-w-[50ch]  text-text2">
               Bitaran Jang Maden is a Visiting Assistant Professor of economics
               at the Allegheny College. His research interests include monetary
               economics, time-series econometrics and applied macroeconomics. He
