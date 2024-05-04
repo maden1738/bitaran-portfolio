@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        helvetica: " 'Helvetica Neue', sans-serif",
+        montserrat: " 'Montserrat', sans-serif",
+        barlowCondensed: "'Barlow Condensed', sans-seriff",
       },
       colors: {
         background: "#ffffff",
