@@ -1,63 +1,57 @@
 import avatar from "../assets/bitaran.jpeg";
-import resume from "../assets/bitaran resume.pdf";
 
 export default function Home() {
   return (
     <>
-      <div className="relative  ml-[15vw] grid h-screen grid-cols-2 gap-6 px-[5%]  text-text">
-        <div className="font-montserrat absolute right-[10%] flex gap-5  text-sm text-text2 lg:bottom-3 xl:bottom-10">
-          <p>bitaran@gmail.com</p>
-          <a
-            href={resume}
-            target="_blank"
-            className=" underline underline-offset-2 hover:text-accent"
-          >
-            My Resume
-          </a>
-        </div>
-
-        <div className="font-barlowCondensed my-auto flex flex-col items-center justify-self-center">
+      <div className=" flex h-screen items-center justify-center  gap-8  text-text  md:ml-[15vw]  md:px-[10%] lg:ml-[20vw] lg:gap-16 lg:px-[5%]">
+        <div className=" flex flex-col items-center justify-self-center font-montserrat">
           <img
             src={avatar}
-            alt=""
-            className="aspect-square  rounded-full object-cover lg:h-[250px]"
+            alt="picture of bitaran"
+            className=" aspect-[3.3/4] h-[250px] rounded-r-xl   object-cover  shadow-lg brightness-110 lg:h-[280px] xl:h-[290px] 2xl:h-[310px] "
           />
-          <h1 className="  mt-4 text-4xl font-medium  ">Bitaran Jang Maden</h1>
-          <p className="font-montserrat mt-2 text-center text-lg  text-text2">
-            Professor
-          </p>
-          <a
-            href="https://www.uh.edu/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="font-montserrat hover-underline-animation  mt-1 text-center text-xl font-light text-accent"
-          >
-            University of Houston
-          </a>
+          <h1 className="  mt-5 text-center text-2xl font-medium">
+            Dr. Bitaran Jang Maden
+          </h1>
+          <div className=" font-source  mt-1  text-center text-lg text-text2">
+            <p>Instructional Assistant Professor</p>
+            <p>Department of Economics</p>
+          </div>
         </div>
 
-        <div className="my-auto">
+        <div>
           <div>
-            <h3 className="font-barlowCondensed text-3xl font-medium text-text">
+            <h3 className=" font-montserrat text-xl font-medium text-text">
               Biography
             </h3>
-            <p className="font-montserrat mt-2 max-w-[50ch]  text-text2">
-              Bitaran Jang Maden is a Visiting Assistant Professor of economics
-              at the Allegheny College. His research interests include monetary
-              economics, time-series econometrics and applied macroeconomics. He
-              has worked as Graduate Part-Time Insturctor and teaching assistant
-              for various faculty at Texas Tech University.
-            </p>
-          </div>
-          <div className="mt-5">
-            <h3 className="font-barlowCondensed text-3xl font-medium">
-              Interests
-            </h3>
-            <ul className="font-montserrat mt-2  list-disc pl-7 text-text">
-              <li className="text-text2">Monetary Economics</li>
-              <li className="text-text2">Time series econometrics</li>
-              <li className="text-text2">Applied macro economics</li>
-            </ul>
+            <div className="font-source mt-2 max-w-[60ch]  pb-20 text-text2">
+              <p>
+                Dr. Bitaran Jang Maden is an Instructional Assistant Professor
+                of Economics at the{" "}
+                <a
+                  href="https://www.uh.edu/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="underline underline-offset-1 hover:text-accent"
+                >
+                  {" "}
+                  University of Houston
+                </a>
+                . With a robust academic foundation that includes a Ph.D. from
+                Texas Tech University and an MBA and engineering degrees from
+                Tribhuvan University, Nepal. Dr. Maden brings a wealth of
+                knowledge and expertise to his field.
+              </p>
+              <p className="mt-2">
+                His research interests span{" "}
+                <span className="text-accent opacity-90">
+                  monetary economics, time-series econometrics, and applied
+                  macroeconomics,{" "}
+                </span>
+                reflecting his commitment to advancing economic understanding
+                through rigorous analysis and innovative methodologies.
+              </p>
+            </div>
           </div>
         </div>
       </div>

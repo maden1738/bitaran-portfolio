@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         montserrat: " 'Montserrat', sans-serif",
-        barlowCondensed: "'Barlow Condensed', sans-seriff",
+        source: "'Source Sans 3', sans-serif",
       },
       colors: {
         background: "#ffffff",
