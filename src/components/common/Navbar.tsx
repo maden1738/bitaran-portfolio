@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { iconsData } from "../../icons";
+import { iconsData } from "../../data/icons";
 import { IoMail } from "react-icons/io5";
 import { PiNewspaperClippingFill } from "react-icons/pi";
 import resume from "../../assets/bitaran resume.pdf";
@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
       </div>
       <nav className="flex   flex-col  items-center justify-center  text-text2">
-        <ul className="font-source flex flex-col gap-6  text-center text-lg">
+        <ul className="flex flex-col gap-6 text-center  font-source text-lg">
           <li className="hover-underline-animation">
             <NavLink
               to="/"

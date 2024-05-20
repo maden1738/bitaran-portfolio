@@ -1,4 +1,4 @@
-import { Research } from "../../research";
+import { Research } from "../../data/research";
 
 export default function Article({
   title,
@@ -9,12 +9,12 @@ export default function Article({
   pdf,
 }: Research) {
   return (
-    <div className="pb-[5%]  pt-[6%] ">
+    <div className="pb-10  pt-[6%] ">
       <main>
         <h1 className="max-w-[30ch]  font-montserrat text-3xl font-medium text-text">
           {title}
         </h1>
-        <div className="font-source mt-4 flex w-fit text-sm text-text2">
+        <div className="mt-4 flex w-fit font-source text-sm text-text2">
           <div className="flex">
             {author.map((author, idx) => (
               <div className="flex" key={idx}>
@@ -26,7 +26,7 @@ export default function Article({
           <div className="pr-2 text-text2">({year})</div>
           {publication && <div className="pr-2 text-text2">{publication}</div>}
         </div>
-        <p className="font-source  mt-6 max-w-[70ch]   text-text2">
+        <p className="mt-6  max-w-[70ch] font-source   text-text2">
           {description}
         </p>
         {pdf && (

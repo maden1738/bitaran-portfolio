@@ -1,6 +1,6 @@
 import Article from "../components/common/Article";
 import OtherResearch from "../components/common/OtherResearch";
-import { researchData } from "../research";
+import { researchData } from "../data/research";
 
 const ID = 0;
 const data = researchData[ID];
