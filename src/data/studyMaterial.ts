@@ -14,19 +14,6 @@ export const subject: subject[] = [
     material: [
       {
         name: "Nonstationary Time Series",
-        fileName: [
-          "Nonstationarity.pdf",
-          "Nonstationarity.pdf",
-          "Nonstationarity.pdf",
-          "Nonstationarity.pdf",
-        ],
-      },
-      {
-        name: "Nonstationary Time Series",
-        fileName: ["Nonstationarity.pdf"],
-      },
-      {
-        name: "Nonstationary Time Series",
         fileName: ["Nonstationarity.pdf"],
       },
     ],

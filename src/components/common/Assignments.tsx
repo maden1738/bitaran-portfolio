@@ -1,6 +1,6 @@
 export default function Assignments() {
   return (
-    <div className="x max-w-fit px-10 text-xl  ">
+    <div className="h-fit max-w-fit rounded-lg  border border-gray-200 px-10 text-xl">
       <h2 className="text-accent">Assignments</h2>
     </div>
   );

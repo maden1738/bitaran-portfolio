@@ -42,15 +42,22 @@ export default function TeachingCard({
           {from} - {to}
         </div>
       </div>
-      <ul className="text mt-2 list-disc pl-4 font-source  text-text">
+      {studyMaterial && (
+        <p className="mt-2 font-source font-semibold text-text2">
+          Students can access study materials from these links{" "}
+        </p>
+      )}
+      <ul className="text list-disc pl-4 font-source  text-text">
         {subjects.map((subject, idx) => (
           <li key={idx}>
             {studyMaterial ? (
-              <Link to={subject.name}>
-                <span className="text-lg hover:text-accent">
-                  {subject.name}
-                </span>
-              </Link>
+              <>
+                <Link to={subject.name}>
+                  <span className="text-lg hover:text-accent">
+                    {subject.name}
+                  </span>
+                </Link>
+              </>
             ) : (
               <span className="text-lg">{subject.name}</span>
             )}
