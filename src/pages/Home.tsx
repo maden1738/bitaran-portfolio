@@ -3,7 +3,7 @@ import avatar from "../assets/bitaran.jpeg";
 export default function Home() {
   return (
     <>
-      <div className=" flex h-screen items-center justify-center  gap-8  text-text  md:ml-[15vw]  md:px-[10%] lg:ml-[20vw] lg:gap-16 lg:px-[5%]">
+      <div className=" flex h-screen items-center justify-center  gap-8  text-text  md:ml-[15vw]  md:px-[10%] lg:ml-[20vw] lg:pl-[8%]  lg:pr-[15%] 2xl:gap-16 2xl:pl-[15%] 2xl:pr-[25%]">
         <div className=" flex flex-col items-center justify-self-center font-montserrat">
           <img
             src={avatar}
@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="  mt-5 text-center text-2xl font-medium">
             Dr. Bitaran Jang Maden
           </h1>
-          <div className=" font-source  mt-1  text-center text-lg text-text2">
+          <div className=" mt-1  text-center  font-source text-lg text-text2">
             <p>Instructional Assistant Professor</p>
             <p>Department of Economics</p>
           </div>
@@ -24,7 +24,7 @@ export default function Home() {
             <h3 className=" font-montserrat text-xl font-medium text-text">
               Biography
             </h3>
-            <div className="font-source mt-2 max-w-[60ch]  pb-20 text-text2">
+            <div className="mt-2 max-w-[60ch] pb-20   font-source text-text2">
               <p>
                 Dr. Bitaran Jang Maden is an Instructional Assistant Professor
                 of Economics at the{" "}

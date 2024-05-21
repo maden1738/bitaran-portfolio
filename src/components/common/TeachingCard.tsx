@@ -1,9 +1,18 @@
+import { Link } from "react-router-dom";
+
+type subject = {
+  name: string;
+  semester?: string;
+  level?: string;
+};
+
 type teachingCardProps = {
+  studyMaterial: boolean;
   college: string;
   position: string;
   from: number;
   to: number | "Present";
-  subjects: string[];
+  subjects: subject[];
   link: string;
 };
 
@@ -14,13 +23,14 @@ export default function TeachingCard({
   to,
   subjects,
   link,
+  studyMaterial,
 }: teachingCardProps) {
   return (
-    <div className=" group  max-w-[70ch] rounded-lg border border-gray-200 p-8 hover:bg-gray-50 hover:shadow-lg ">
+    <div className=" group  mb-6 rounded-lg border border-gray-200 px-10 py-6 hover:bg-gray-50 hover:shadow-lg">
       <div className="flex items-center justify-between">
         <div>
           <a href={link} target="_blank" rel="noreferrer noopener">
-            <h2 className="font-montserrat text-2xl font-medium text-text underline-offset-4 hover:text-accent group-hover:underline">
+            <h2 className="font-montserrat text-2xl font-medium text-text2  hover:text-accent ">
               {college}
             </h2>
           </a>
@@ -32,16 +42,25 @@ export default function TeachingCard({
           {from} - {to}
         </div>
       </div>
-      <div className="mt-4 flex flex-wrap justify-center gap-3">
+      <ul className="text mt-2 list-disc pl-4 font-source  text-text">
         {subjects.map((subject, idx) => (
-          <div
-            key={idx}
-            className=" cursor-default rounded-lg bg-primary px-2 py-1 font-source text-sm text-text2"
-          >
-            {subject}
-          </div>
+          <li key={idx}>
+            {studyMaterial ? (
+              <Link to={subject.name}>
+                <span className="text-lg hover:text-accent">
+                  {subject.name}
+                </span>
+              </Link>
+            ) : (
+              <span className="text-lg">{subject.name}</span>
+            )}
+            <span className="pl-4">
+              <span className="  pr-2 text-text2">{subject.level}</span>
+              <span className=" text-text2">{subject.semester}</span>
+            </span>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

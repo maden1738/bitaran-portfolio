@@ -6,7 +6,7 @@ type OtherResearchProps = { id: number };
 
 export default function OtherResearch({ id }: OtherResearchProps) {
   return (
-    <div className=" w-[600px]">
+    <div className="w-[600px]  pr-4">
       <h2 className=" font-montserrat text-2xl font-medium ">
         Other Researches:
       </h2>

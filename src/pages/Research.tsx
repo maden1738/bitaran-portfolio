@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Research() {
   return (
-    <div className="h-screen px-[8%] pt-16 md:ml-[20vw]  lg:ml-[15vw]">
+    <div className="h-screen pt-16 md:ml-[20vw] md:px-6 lg:ml-[15vw]  lg:pl-[8%] lg:pr-[15%]  2xl:pl-[15%] 2xl:pr-[25%]">
       <h1 className="mb-10 font-montserrat text-3xl font-semibold">Research</h1>
       {researchData.map((research, idx) => (
         <div className="mb-14" key={idx}>

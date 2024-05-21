@@ -9,7 +9,7 @@ export default function Article({
   pdf,
 }: Research) {
   return (
-    <div className="pb-10  pt-[6%] ">
+    <div className="px-4 pb-10 pt-[6%]">
       <main>
         <h1 className="max-w-[30ch]  font-montserrat text-3xl font-medium text-text">
           {title}
